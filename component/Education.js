@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import LiIcon from './LiIcon'
 import styles from './Education.module.css'
 
-
+//completed for conversion
 
 function Details  ({type, time, place, info}) {
 
@@ -16,27 +16,23 @@ function Details  ({type, time, place, info}) {
            
 
 
-      <LiIcon reference={ref}/>      
+         
       <div className={styles.roundedWrapper}>
-        <div className={styles.rounded}>
-        
-        </div>
+       
       </div>
-        <motion.div         
-        initial={{y:50}}
-        whileInView={{y:0}}
-        transition={{duration: 0.5, type:'spring'}}
+        <div         
+         className={styles.detailWrapper}
         >
-            <h3 className='font-bold text-3xl'>{}&nbsp;
+            <h3 className={styles.infoType}>{}&nbsp;
                 {type}
             </h3>
-            <span className='capitalize text-2xl text-dark/75 dark:text-primaryGreen'>
+            <span className={styles.detailInfo}>
                 {time} | {place}
             </span>
-            <p className='text-2xl w-full'>
+            <p className={styles.detailInfoPlus}>
                 {info}
             </p>
-        </motion.div>
+        </div>
 
 
     </li>
@@ -59,18 +55,15 @@ function Education() {
 
 
   return (
-    <div className='my-64 flex flex-col items-center text-dark dark:text-light'>
+    <div className={styles.Root}>
 
-    <h2 className='font-bold mb-32 text-8xl  text-center md:text-6xl xs:text-4xl md:mb-6 border-b-[2px] w-[90%]'>Formação Acadêmica</h2>
-    <div ref={ref} className='w-[75%] mx-auto relative text-start lg:w-[75%] md:w-full'>
-
-   <motion.div
-   style={{scaleY:scrollYProgress}}
-   className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light
-   md:w-[2px] md:left-[30px] xs:left-[20px]'/>
+    <h2 className={styles.root2}>Formação Acadêmica</h2>
+    <div ref={ref} className={styles.main}>
 
 
-        <ul>
+
+
+        <ul className={styles.list}>
 
      
   

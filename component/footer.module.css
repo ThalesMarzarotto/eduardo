@@ -1,0 +1,84 @@
+.strange{
+    display: inline-block;
+    position: relative; /* O valor padrão para `z-index` quando não é especificado é auto, mas `relative` é geralmente necessário para manipular `z-index`. */
+    z-index: 0;
+    background-color: var(--bg-light); /* Substitua pela cor desejada para bg-light */
+    padding: 8rem; /* 32 * 0.25rem = 8rem */
+    width: 100%; /* -full é convertido para 100% */
+    height: 100%; /* -full é convertido para 100% */
+    background-color: black; /* bg-black em Tailwind */
+    display: flex; /* Presumido com base na sua classe `lg:flex-col` */
+    flex-direction: row; /* Valor padrão para flex-direction */
+    color:white; 
+    justify-content: center;
+}
+
+.main{
+    width: 100%; /* w-full */
+    border-top: 2px solid white; /* border-t-2 border-solid border-white */
+    font-weight: 500; /* font-medium */
+    color: var(--text-dark); /* text-dark */
+    font-size: 1.125rem; 
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* grid-cols-6 */
+    gap: 0.5rem; 
+}
+
+.initialInfo{
+    grid-column: span 2; /* col-span-2 */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: flex-start; /* items-start */
+}
+
+.contactInfo{
+    grid-column: span 2; /* col-span-2 */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+}
+
+.contactNumber{
+    display: flex;
+    flex-direction: column;
+}
+.contactNumber{
+    display: flex;
+    flex-direction: column;
+}
+
+.logoContainer{
+    margin-top: 5rem; /* mt-20 em Tailwind é aproximadamente 5rem */
+    grid-column: span 2; /* col-span-2 */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+}
+
+
+
+
+@media (min-width: 768px) {
+    .contactInfo{
+      grid-column: span 3; /* md:col-span-3 */
+    }
+    .initialInfo{
+      grid-column: span 3; /* md:col-span-3 */
+    }
+    .logoContainer{
+      grid-column: span 6; 
+    }
+  }
+  
+  /* Para telas pequenas (sm) */
+  @media (max-width: 639px) {
+    .initialInfo{
+      grid-column: span 6; /* sm:col-span-6 */
+    }
+    .contactInfo{
+      grid-column: span 6; /* sm:col-span-6 */
+    }
+  }

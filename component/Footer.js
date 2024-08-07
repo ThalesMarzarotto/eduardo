@@ -7,16 +7,17 @@ import cremers from '../public/images/icon-1-rdp.png'
 import cfm from '../public/images/icon-2-rdp.png'
 import Image from 'next/image'
 import { JorgensIcon, WhatsAppIcon } from './Icons'
-
+// 
+import styles from './footer.module.css'
 
 function Footer() {
   return (
     
-    <footer className='w-full border-t-2 border-solid border-white font-medium font-color text-lg dark:text-light dark:border-light text-dark sm:text-base'>
-        <Layout className={' bg-black lg:flex-col '}>
-            <div className='grid grid-cols-6 gap-2'>
+    <footer className={styles.main}>
+        <div className={styles.strange}>
+            <div className={styles.mainGrid}>
               
-            <div className=' col-span-2 md:col-span-3 sm:col-span-6 flex flex-col items-start'>
+            <div className={styles.initialInfo}>
               <h2 className='text-2xl font-bold'>Dr. Eduardo Jorgens</h2>
               <h3 className='text-1xl font-medium '>Cirurgião do Aparelho Digestivo</h3>
               <p className='text-1xl '>CRM 29002</p>
@@ -24,7 +25,7 @@ function Footer() {
               <p className='text-1xl '>RQE Cirurgia Digestiva 41641</p>
               <JorgensIcon/>
             </div>
-            <div className='col-span-2 md:col-span-3 sm:col-span-6 flex flex-col items-center' >
+            <div className={styles.contactInfo} >
             <div className='flex flex-col items-start'>
             <p className='text-2xl'>Contato</p>
 
@@ -40,13 +41,13 @@ function Footer() {
               </a>
             
             </div>
-             <div className='flex flex-col'>
+             <div className={styles.contactNumber}>
             
-              <div className='flex flex-col items-start text-1xl'>
+              <div className={styles.contactNumber}>
                 Celular             
                 <p> &nbsp; +55 51 99199-9640</p>
               </div>
-              <div className='flex flex-col items-start text-1xl'>
+              <div className={styles.contactNumber}>
                 Fixo   
                 <p> &nbsp; +55 51 3594-5072</p>
               </div>
@@ -58,7 +59,7 @@ function Footer() {
         
             </div>
             
-            <div  className='mt-20 col-span-2 md:col-span-6 flex flex-col items-center'>
+            <div  className={styles.logoContainer}>
               <Image src={cremers} alt={""} className='bg-dark rounded-[10px]'/>
               <Image src={cfm} alt={""}  className='bg-dark rounded-[10px]'/>
 
@@ -69,7 +70,7 @@ function Footer() {
 
             </div>             
 
-        </Layout>
+        </div>
 
         <a className='mt-32 flex flex-row justify-center items-center' href='https://www.instagram.com/thalesmarzarotto/'>
               <svg className={'dark:fill-white fill-dark w-[15%]'} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2387.7 722.91" fill='currentColor' stroke='currentColor'>
