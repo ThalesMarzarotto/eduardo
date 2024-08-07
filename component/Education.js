@@ -1,7 +1,7 @@
 import { motion, useScroll } from 'framer-motion'
 import React, { useRef } from 'react'
 import LiIcon from './LiIcon'
-
+import styles from './Education.module.css'
 
 
 
@@ -12,11 +12,16 @@ function Details  ({type, time, place, info}) {
 
   return (
 
-    <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between text-start'>
+    <li ref={ref} className={styles.my_custom_class}>
            
 
 
       <LiIcon reference={ref}/>      
+      <div className={styles.roundedWrapper}>
+        <div className={styles.rounded}>
+        
+        </div>
+      </div>
         <motion.div         
         initial={{y:50}}
         whileInView={{y:0}}

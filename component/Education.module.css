@@ -1,0 +1,37 @@
+.my_custom_class {
+    margin-top: 2rem; /* Adjust as needed */
+    margin-bottom: 2rem; /* Adjust as needed */
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+    height: fit-content;
+  }
+  
+  .my_custom_class:first-child {
+    margin-top: 0;
+  }
+  
+  .my_custom_class:last-child {
+    margin-bottom: 0;
+  }
+
+.roundedWrapper {
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    height: 100%;
+}
+
+.rounded {
+    height: 3px;
+    width: 3px;
+    border-radius: 100%;
+    background-color: black;
+}
