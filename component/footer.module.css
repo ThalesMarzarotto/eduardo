@@ -34,7 +34,7 @@
     align-items: flex-start; /* items-start */
 }
 
-.contactInfo{
+.contactInfoContainer{
     grid-column: span 2; /* col-span-2 */
     display: flex; /* flex */
     flex-direction: column; /* flex-col */
@@ -99,10 +99,14 @@
     
       
 }
-
+.contactInfo{
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: flex-start; /* items-start */
+}
 
 @media (min-width: 768px) {
-    .contactInfo{
+    .contactInfoContainer{
       grid-column: span 3; /* md:col-span-3 */
     }
     .initialInfo{
@@ -118,7 +122,7 @@
     .initialInfo{
       grid-column: span 6; /* sm:col-span-6 */
     }
-    .contactInfo{
+    .contactInfoContainer{
       grid-column: span 6; /* sm:col-span-6 */
     }
   }
