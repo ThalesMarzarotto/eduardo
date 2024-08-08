@@ -58,7 +58,47 @@
     align-items: center; /* items-center */
 }
 
+.thales{
+    margin-top: 8rem; /* mt-32 em Tailwind é aproximadamente 8rem */
+    display: flex; /* flex */
+    flex-direction: row; /* flex-row */
+    justify-content: center; /* justify-center */
+    align-items: center; /* items-center */}
 
+
+.logo{
+    width: 15%; /* w-[15%] */
+    fill: var(--fill-dark); /* fill-dark */
+}
+
+
+.council{
+    
+        background-color: var(--bg-dark); /* bg-dark */
+        border-radius: 10px; /* rounded-[10px] */
+      
+}
+
+.title{
+    
+        font-size: 1.5rem; /* text-2xl */
+        font-weight: bold; /* font-bold */
+    
+      
+}
+
+.majorattribute{
+    font-size: 1.25rem; /* text-1xl em Tailwind é aproximadamente 1.25rem */
+    font-weight: 500; /* font-medium */
+}
+
+.attributeCredential {
+    
+        font-size: 1.25rem; /* text-1xl em Tailwind é aproximadamente 1.25rem */
+        font-weight: 500; /* font-medium */
+    
+      
+}
 
 
 @media (min-width: 768px) {
