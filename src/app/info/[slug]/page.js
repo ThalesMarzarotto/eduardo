@@ -27,10 +27,8 @@ for (const [key, value] of Object.entries(posts)) {
 
   return arr.map ((row)=>(
  {
-    title:row.title,
-    date:row.date,
-    content: row.content,
-    coauthor:row.coauthor? row.coauthor : null
+   slug:row[0],
+   
   }
   
  ))
