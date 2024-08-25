@@ -1,6 +1,6 @@
 import { motion, useScroll } from 'framer-motion'
 import React, { useRef } from 'react'
-import LiIcon from './LiIcon'
+
 import styles from './Education.module.css'
 
 //completed for conversion
@@ -23,7 +23,7 @@ function Details  ({type, time, place, info}) {
         <div         
          className={styles.detailWrapper}
         >
-            <h3 className={styles.infoType}>{}&nbsp;
+            <h3 className={styles.infoType}>
                 {type}
             </h3>
             <span className={styles.detailInfo}>
@@ -55,9 +55,12 @@ function Education() {
 
 
   return (
-    <div className={styles.Root}>
+    <div className={styles.root}>
+
 
     <h2 className={styles.root2}>Formação Acadêmica</h2>
+    
+
     <div ref={ref} className={styles.main}>
 
 

@@ -17,6 +17,10 @@ export const GithubIcon = ({ className, ...rest }) => (
   </svg>
 );
 
+
+
+
+
 export const TwitterIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +97,202 @@ export const DribbbleIcon = ({ className, ...rest }) => (
   </svg>
 );
 
+
+
+
+export const InstagramIcon = ({ className, ...rest }) => (
+  <svg
+    stroke="currentColor"
+    fill="currentColor"
+    strokeWidth={0}
+    viewBox="0 0 1024 1024"
+    height="100%"
+    width="100%"
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+    className={`w-full h-auto ${className}`}
+  >
+    <path
+      d="M 512 306.9 c -113.5 0 -205.1 91.6 -205.1 205.1 S 398.5 717.1 512 717.1 S 717.1 625.5 717.1 512 S 625.5 306.9 512 306.9 Z m 0 338.4 c -73.4 0 -133.3 -59.9 -133.3 -133.3 S 438.6 378.7 512 378.7 S 645.3 438.6 645.3 512 S 585.4 645.3 512 645.3 Z m 213.5 -394.6 c -26.5 0 -47.9 21.4 -47.9 47.9 s 21.4 47.9 47.9 47.9 s 47.9 -21.3 47.9 -47.9 a 47.84 47.84 0 0 0 -47.9 -47.9 Z M 911.8 512 c 0 -55.2 0.5 -109.9 -2.6 -165 c -3.1 -64 -17.7 -120.8 -64.5 -167.6 c -46.9 -46.9 -103.6 -61.4 -167.6 -64.5 c -55.2 -3.1 -109.9 -2.6 -165 -2.6 c -55.2 0 -109.9 -0.5 -165 2.6 c -64 3.1 -120.8 17.7 -167.6 64.5 C 132.6 226.3 118.1 283 115 347 c -3.1 55.2 -2.6 109.9 -2.6 165 s -0.5 109.9 2.6 165 c 3.1 64 17.7 120.8 64.5 167.6 c 46.9 46.9 103.6 61.4 167.6 64.5 c 55.2 3.1 109.9 2.6 165 2.6 c 55.2 0 109.9 0.5 165 -2.6 c 64 -3.1 120.8 -17.7 167.6 -64.5 c 46.9 -46.9 61.4 -103.6 64.5 -167.6 c 3.2 -55.1 2.6 -109.8 2.6 -165 Z m -88 235.8 c -7.3 18.2 -16.1 31.8 -30.2 45.8 c -14.1 14.1 -27.6 22.9 -45.8 30.2 C 695.2 844.7 570.3 840 512 840 c -58.3 0 -183.3 4.7 -235.9 -16.1 c -18.2 -7.3 -31.8 -16.1 -45.8 -30.2 c -14.1 -14.1 -22.9 -27.6 -30.2 -45.8 C 179.3 695.2 184 570.3 184 512 c 0 -58.3 -4.7 -183.3 16.1 -235.9 c 7.3 -18.2 16.1 -31.8 30.2 -45.8 s 27.6 -22.9 45.8 -30.2 C 328.7 179.3 453.7 184 512 184 s 183.3 -4.7 235.9 16.1 c 18.2 7.3 31.8 16.1 45.8 30.2 c 14.1 14.1 22.9 27.6 30.2 45.8 C 844.7 328.7 840 453.7 840 512 c 0 58.3 4.7 183.2 -16.2 235.8 Z"
+      stroke="none"
+    />
+  </svg>
+)
+
+export const WhatsAppIcon = ({ className, ...rest }) => (
+  <svg
+    stroke="currentColor"
+    fill="currentColor"
+    strokeWidth={0}
+    viewBox="0 0 512 512"
+    height="100%"
+    width="100%"
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+    className={`w-full h-auto fill-[#1ad03f] ${className}`}
+  >
+    <path d="M260.062 32C138.605 32 40.134 129.701 40.134 250.232c0 41.23 11.532 79.79 31.559 112.687L32 480l121.764-38.682c31.508 17.285 67.745 27.146 106.298 27.146C381.535 468.464 480 370.749 480 250.232 480 129.701 381.535 32 260.062 32zm109.362 301.11c-5.174 12.827-28.574 24.533-38.899 25.072-10.314.547-10.608 7.994-66.84-16.434-56.225-24.434-90.052-83.844-92.719-87.67-2.669-3.812-21.78-31.047-20.749-58.455 1.038-27.413 16.047-40.346 21.404-45.725 5.351-5.387 11.486-6.352 15.232-6.413 4.428-.072 7.296-.132 10.573-.011 3.274.124 8.192-.685 12.45 10.639 4.256 11.323 14.443 39.153 15.746 41.989 1.302 2.839 2.108 6.126.102 9.771-2.012 3.653-3.042 5.935-5.961 9.083-2.935 3.148-6.174 7.042-8.792 9.449-2.92 2.665-5.97 5.572-2.9 11.269 3.068 5.693 13.653 24.356 29.779 39.736 20.725 19.771 38.598 26.329 44.098 29.317 5.515 3.004 8.806 2.67 12.226-.929 3.404-3.599 14.639-15.746 18.596-21.169 3.955-5.438 7.661-4.373 12.742-2.329 5.078 2.052 32.157 16.556 37.673 19.551 5.51 2.989 9.193 4.529 10.51 6.9 1.317 2.38.901 13.531-4.271 26.359z"></path>
+  </svg>
+)
+
 export const SunIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    {...rest}
+    className={`w-full h-auto ${className}`}
+  >
+    <rect x="0" y="0" width="24" height="24" fill="rgba(255, 255, 255, 0)" />
+    <g
+      fill="none"
+      stroke="currentColor"
+      strokeDasharray="2"
+      strokeDashoffset="2"
+      strokeLinecap="round"
+      strokeWidth="2"
+    >
+      <path d="M0 0">
+        <animate
+          fill="freeze"
+          attributeName="d"
+          begin="1.2s"
+          dur="0.2s"
+          values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"
+        />
+        <animate
+          fill="freeze"
+          attributeName="stroke-dashoffset"
+          begin="1.2s"
+          dur="0.2s"
+          values="2;0"
+        />
+      </path>
+      <path d="M0 0">
+        <animate
+          fill="freeze"
+          attributeName="d"
+          begin="1.5s"
+          dur="0.2s"
+          values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"
+        />
+        <animate
+          fill="freeze"
+          attributeName="stroke-dashoffset"
+          begin="1.5s"
+          dur="1.2s"
+          values="2;0"
+        />
+      </path>
+      <animateTransform
+        attributeName="transform"
+        dur="30s"
+        repeatCount="indefinite"
+        type="rotate"
+        values="0 12 12;360 12 12"
+      />
+    </g>
+    <g fill="currentColor">
+      <path d="M15.22 6.03L17.75 4.09L14.56 4L13.5 1L12.44 4L9.25 4.09L11.78 6.03L10.87 9.09L13.5 7.28L16.13 9.09L15.22 6.03Z">
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          dur="0.4s"
+          values="1;0"
+        />
+      </path>
+      <path d="M19.61 12.25L21.25 11L19.19 10.95L18.5 9L17.81 10.95L15.75 11L17.39 12.25L16.8 14.23L18.5 13.06L20.2 14.23L19.61 12.25Z">
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="0.2s"
+          dur="0.4s"
+          values="1;0"
+        />
+      </path>
+    </g>
+    <g
+      fill="currentColor"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+    >
+      <path d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z" />
+      <set attributeName="opacity" begin="0.6s" to="0" />
+    </g>
+    <mask id="lineMdMoonFilledToSunnyFilledLoopTransition0">
+      <circle cx="12" cy="12" r="12" fill="#fff" />
+      <circle cx="18" cy="6" r="12" fill="#fff">
+        <animate
+          fill="freeze"
+          attributeName="cx"
+          begin="0.6s"
+          dur="0.4s"
+          values="18;22"
+        />
+        <animate
+          fill="freeze"
+          attributeName="cy"
+          begin="0.6s"
+          dur="0.4s"
+          values="6;2"
+        />
+        <animate
+          fill="freeze"
+          attributeName="r"
+          begin="0.6s"
+          dur="0.4s"
+          values="12;3"
+        />
+      </circle>
+      <circle cx="18" cy="6" r="10">
+        <animate
+          fill="freeze"
+          attributeName="cx"
+          begin="0.6s"
+          dur="0.4s"
+          values="18;22"
+        />
+        <animate
+          fill="freeze"
+          attributeName="cy"
+          begin="0.6s"
+          dur="0.4s"
+          values="6;2"
+        />
+        <animate
+          fill="freeze"
+          attributeName="r"
+          begin="0.6s"
+          dur="0.4s"
+          values="10;1"
+        />
+      </circle>
+    </mask>
+    <circle
+      cx="12"
+      cy="12"
+      r="10"
+      fill="currentColor"
+      mask="url(#lineMdMoonFilledToSunnyFilledLoopTransition0)"
+      opacity="0"
+    >
+      <set attributeName="opacity" begin="0.6s" to="1" />
+      <animate
+        fill="freeze"
+        attributeName="r"
+        begin="0.6s"
+        dur="0.4s"
+        values="10;6"
+      />
+    </circle>
+  </svg>
+);
+
+
+export const MoonIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -272,199 +471,74 @@ export const SunIcon = ({ className, ...rest }) => (
 );
 
 
-
-export const InstagramIcon = ({ className, ...rest }) => (
+export const ExpandIcon = (props) => (
   <svg
-    stroke="currentColor"
+  aria-hidden="true"
+  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-p79yt4"
+  width="1em"
+  height="1em"
+  fill="currentColor"
+  stroke="currentColor"
+  viewBox="0 0 24 24"
+  {...props}
+>
+  <path d="M12 5.83 15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15z" />
+</svg>
+)
+
+
+
+
+
+export const ContractIcon = (props) => (
+  <svg
+  aria-hidden="true"
+  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-root MuiSvgIcon-fontSizeLarge css-p79yt4"
+  width="1em"
+  height="1em"
+  fill="currentColor"
+  stroke="currentColor"
+  viewBox="0 0 24 24"
+  {...props}
+>
+  <path d="M7.41 18.59 8.83 20 12 16.83 15.17 20l1.41-1.41L12 14zm9.18-13.18L15.17 4 12 7.17 8.83 4 7.41 5.41 12 10z" />
+</svg>
+)
+
+
+export const MutedIcon = (props) => (
+  <svg
+    width={12}
+    height={12}
     fill="currentColor"
-    strokeWidth={0}
-    viewBox="0 0 1024 1024"
-    height="1em"
-    width="1em"
-    xmlns="http://www.w3.org/2000/svg"
-    {...rest}
-    className={`w-full h-auto ${className}`}
+    aria-label="O \xE1udio est\xE1 silenciado"
+    className="x1lliihq x1n2onr6 x9bdzbf"
+    viewBox="0 0 48 48"
+    {...props}
   >
+    <title>{"O \xE1udio est\xE1 silenciado"}</title>
     <path
-      d="M 512 306.9 c -113.5 0 -205.1 91.6 -205.1 205.1 S 398.5 717.1 512 717.1 S 717.1 625.5 717.1 512 S 625.5 306.9 512 306.9 Z m 0 338.4 c -73.4 0 -133.3 -59.9 -133.3 -133.3 S 438.6 378.7 512 378.7 S 645.3 438.6 645.3 512 S 585.4 645.3 512 645.3 Z m 213.5 -394.6 c -26.5 0 -47.9 21.4 -47.9 47.9 s 21.4 47.9 47.9 47.9 s 47.9 -21.3 47.9 -47.9 a 47.84 47.84 0 0 0 -47.9 -47.9 Z M 911.8 512 c 0 -55.2 0.5 -109.9 -2.6 -165 c -3.1 -64 -17.7 -120.8 -64.5 -167.6 c -46.9 -46.9 -103.6 -61.4 -167.6 -64.5 c -55.2 -3.1 -109.9 -2.6 -165 -2.6 c -55.2 0 -109.9 -0.5 -165 2.6 c -64 3.1 -120.8 17.7 -167.6 64.5 C 132.6 226.3 118.1 283 115 347 c -3.1 55.2 -2.6 109.9 -2.6 165 s -0.5 109.9 2.6 165 c 3.1 64 17.7 120.8 64.5 167.6 c 46.9 46.9 103.6 61.4 167.6 64.5 c 55.2 3.1 109.9 2.6 165 2.6 c 55.2 0 109.9 0.5 165 -2.6 c 64 -3.1 120.8 -17.7 167.6 -64.5 c 46.9 -46.9 61.4 -103.6 64.5 -167.6 c 3.2 -55.1 2.6 -109.8 2.6 -165 Z m -88 235.8 c -7.3 18.2 -16.1 31.8 -30.2 45.8 c -14.1 14.1 -27.6 22.9 -45.8 30.2 C 695.2 844.7 570.3 840 512 840 c -58.3 0 -183.3 4.7 -235.9 -16.1 c -18.2 -7.3 -31.8 -16.1 -45.8 -30.2 c -14.1 -14.1 -22.9 -27.6 -30.2 -45.8 C 179.3 695.2 184 570.3 184 512 c 0 -58.3 -4.7 -183.3 16.1 -235.9 c 7.3 -18.2 16.1 -31.8 30.2 -45.8 s 27.6 -22.9 45.8 -30.2 C 328.7 179.3 453.7 184 512 184 s 183.3 -4.7 235.9 16.1 c 18.2 7.3 31.8 16.1 45.8 30.2 c 14.1 14.1 22.9 27.6 30.2 45.8 C 844.7 328.7 840 453.7 840 512 c 0 58.3 4.7 183.2 -16.2 235.8 Z"
-      stroke="none"
+      fillRule="evenodd"
+      d="M1.5 13.3c-.8 0-1.5.7-1.5 1.5v18.4c0 .8.7 1.5 1.5 1.5h8.7l12.9 12.9c.9.9 2.5.3 2.5-1v-9.8c0-.4-.2-.8-.4-1.1l-22-22c-.3-.3-.7-.4-1.1-.4h-.6zm46.8 31.4-5.5-5.5C44.9 36.6 48 31.4 48 24c0-11.4-7.2-17.4-7.2-17.4-.6-.6-1.6-.6-2.2 0L37.2 8c-.6.6-.6 1.6 0 2.2 0 0 5.7 5 5.7 13.8 0 5.4-2.1 9.3-3.8 11.6L35.5 32c1.1-1.7 2.3-4.4 2.3-8 0-6.8-4.1-10.3-4.1-10.3-.6-.6-1.6-.6-2.2 0l-1.4 1.4c-.6.6-.6 1.6 0 2.2 0 0 2.6 2 2.6 6.7 0 1.8-.4 3.2-.9 4.3L25.5 22V1.4c0-1.3-1.6-1.9-2.5-1L13.5 10 3.3-.3c-.6-.6-1.5-.6-2.1 0L-.2 1.1c-.6.6-.6 1.5 0 2.1L4 7.6l26.8 26.8 13.9 13.9c.6.6 1.5.6 2.1 0l1.4-1.4c.7-.6.7-1.6.1-2.2z"
+      clipRule="evenodd"
     />
   </svg>
 )
 
-export const WhatsAppIcon = ({ className, ...rest }) => (
+export const UnmutedIcon = (props) => (
   <svg
-    stroke="currentColor"
+    width={12}
+    height={12}
     fill="currentColor"
-    strokeWidth={0}
-    viewBox="0 0 512 512"
-    height="1em"
-    width="1em"
-    xmlns="http://www.w3.org/2000/svg"
-    {...rest}
-    className={`w-full h-auto fill-[#1ad03f] ${className}`}
+    aria-label="O \xE1udio est\xE1 em reprodu\xE7\xE3o"
+    className="x1lliihq x1n2onr6 x9bdzbf"
+    viewBox="0 0 24 24"
+    {...props}
   >
-    <path d="M260.062 32C138.605 32 40.134 129.701 40.134 250.232c0 41.23 11.532 79.79 31.559 112.687L32 480l121.764-38.682c31.508 17.285 67.745 27.146 106.298 27.146C381.535 468.464 480 370.749 480 250.232 480 129.701 381.535 32 260.062 32zm109.362 301.11c-5.174 12.827-28.574 24.533-38.899 25.072-10.314.547-10.608 7.994-66.84-16.434-56.225-24.434-90.052-83.844-92.719-87.67-2.669-3.812-21.78-31.047-20.749-58.455 1.038-27.413 16.047-40.346 21.404-45.725 5.351-5.387 11.486-6.352 15.232-6.413 4.428-.072 7.296-.132 10.573-.011 3.274.124 8.192-.685 12.45 10.639 4.256 11.323 14.443 39.153 15.746 41.989 1.302 2.839 2.108 6.126.102 9.771-2.012 3.653-3.042 5.935-5.961 9.083-2.935 3.148-6.174 7.042-8.792 9.449-2.92 2.665-5.97 5.572-2.9 11.269 3.068 5.693 13.653 24.356 29.779 39.736 20.725 19.771 38.598 26.329 44.098 29.317 5.515 3.004 8.806 2.67 12.226-.929 3.404-3.599 14.639-15.746 18.596-21.169 3.955-5.438 7.661-4.373 12.742-2.329 5.078 2.052 32.157 16.556 37.673 19.551 5.51 2.989 9.193 4.529 10.51 6.9 1.317 2.38.901 13.531-4.271 26.359z"></path>
+    <title>{"O \xE1udio est\xE1 em reprodu\xE7\xE3o"}</title>
+    <path d="M16.636 7.028a1.5 1.5 0 1 0-2.395 1.807 5.365 5.365 0 0 1 1.103 3.17 5.378 5.378 0 0 1-1.105 3.176 1.5 1.5 0 1 0 2.395 1.806 8.396 8.396 0 0 0 1.71-4.981 8.39 8.39 0 0 0-1.708-4.978Zm3.73-2.332A1.5 1.5 0 1 0 18.04 6.59 8.823 8.823 0 0 1 20 12.007a8.798 8.798 0 0 1-1.96 5.415 1.5 1.5 0 0 0 2.326 1.894 11.672 11.672 0 0 0 2.635-7.31 11.682 11.682 0 0 0-2.635-7.31Zm-8.963-3.613a1.001 1.001 0 0 0-1.082.187L5.265 6H2a1 1 0 0 0-1 1v10.003a1 1 0 0 0 1 1h3.265l5.01 4.682.02.021a1 1 0 0 0 1.704-.814L12.005 2a1 1 0 0 0-.602-.917Z" />
   </svg>
 )
-
-
-export const MoonIcon = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    {...rest}
-    className={`w-full h-auto ${className}`}
-  >
-    <rect x="0" y="0" width="24" height="24" fill="rgba(255, 255, 255, 0)" />
-    <g
-      fill="none"
-      stroke="currentColor"
-      strokeDasharray="2"
-      strokeDashoffset="2"
-      strokeLinecap="round"
-      strokeWidth="2"
-    >
-      <path d="M0 0">
-        <animate
-          fill="freeze"
-          attributeName="d"
-          begin="1.2s"
-          dur="0.2s"
-          values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"
-        />
-        <animate
-          fill="freeze"
-          attributeName="stroke-dashoffset"
-          begin="1.2s"
-          dur="0.2s"
-          values="2;0"
-        />
-      </path>
-      <path d="M0 0">
-        <animate
-          fill="freeze"
-          attributeName="d"
-          begin="1.5s"
-          dur="0.2s"
-          values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"
-        />
-        <animate
-          fill="freeze"
-          attributeName="stroke-dashoffset"
-          begin="1.5s"
-          dur="1.2s"
-          values="2;0"
-        />
-      </path>
-      <animateTransform
-        attributeName="transform"
-        dur="30s"
-        repeatCount="indefinite"
-        type="rotate"
-        values="0 12 12;360 12 12"
-      />
-    </g>
-    <g fill="currentColor">
-      <path d="M15.22 6.03L17.75 4.09L14.56 4L13.5 1L12.44 4L9.25 4.09L11.78 6.03L10.87 9.09L13.5 7.28L16.13 9.09L15.22 6.03Z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          dur="0.4s"
-          values="1;0"
-        />
-      </path>
-      <path d="M19.61 12.25L21.25 11L19.19 10.95L18.5 9L17.81 10.95L15.75 11L17.39 12.25L16.8 14.23L18.5 13.06L20.2 14.23L19.61 12.25Z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="0.2s"
-          dur="0.4s"
-          values="1;0"
-        />
-      </path>
-    </g>
-    <g
-      fill="currentColor"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-    >
-      <path d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z" />
-      <set attributeName="opacity" begin="0.6s" to="0" />
-    </g>
-    <mask id="lineMdMoonFilledToSunnyFilledLoopTransition0">
-      <circle cx="12" cy="12" r="12" fill="#fff" />
-      <circle cx="18" cy="6" r="12" fill="#fff">
-        <animate
-          fill="freeze"
-          attributeName="cx"
-          begin="0.6s"
-          dur="0.4s"
-          values="18;22"
-        />
-        <animate
-          fill="freeze"
-          attributeName="cy"
-          begin="0.6s"
-          dur="0.4s"
-          values="6;2"
-        />
-        <animate
-          fill="freeze"
-          attributeName="r"
-          begin="0.6s"
-          dur="0.4s"
-          values="12;3"
-        />
-      </circle>
-      <circle cx="18" cy="6" r="10">
-        <animate
-          fill="freeze"
-          attributeName="cx"
-          begin="0.6s"
-          dur="0.4s"
-          values="18;22"
-        />
-        <animate
-          fill="freeze"
-          attributeName="cy"
-          begin="0.6s"
-          dur="0.4s"
-          values="6;2"
-        />
-        <animate
-          fill="freeze"
-          attributeName="r"
-          begin="0.6s"
-          dur="0.4s"
-          values="10;1"
-        />
-      </circle>
-    </mask>
-    <circle
-      cx="12"
-      cy="12"
-      r="10"
-      fill="currentColor"
-      mask="url(#lineMdMoonFilledToSunnyFilledLoopTransition0)"
-      opacity="0"
-    >
-      <set attributeName="opacity" begin="0.6s" to="1" />
-      <animate
-        fill="freeze"
-        attributeName="r"
-        begin="0.6s"
-        dur="0.4s"
-        values="10;6"
-      />
-    </circle>
-  </svg>
-);
-
 export const CircularText = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -479,13 +553,99 @@ export const CircularText = ({ className, ...rest }) => (
   </svg>
 );
 
+
+export const ArrowRight = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    fill="currentColor"
+    stroke="currentColor"
+    strokeWidth={0}
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <path fill="none" stroke="none" d="M0 0h24v24H0V0z" />
+    <path
+      stroke="none"
+      d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"
+    />
+  </svg>
+)
+
+
+
+
+export const BarsIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    fill="currentColor"
+    stroke="currentColor"
+    strokeWidth={0}
+    aria-hidden="true"
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      stroke="none"
+      d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+      clipRule="evenodd"
+    />
+  </svg>
+)
+
+
+
+export const CloseIcon = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="100%"
+    height="100%"
+    fill="currentColor"
+    stroke="currentColor"
+    strokeWidth={0}
+    viewBox="0 0 512 512"
+    {...props}
+  >
+    <path
+      stroke="none"
+      d="m289.94 256 95-95A24 24 0 0 0 351 127l-95 95-95-95a24 24 0 0 0-34 34l95 95-95 95a24 24 0 1 0 34 34l95-95 95 95a24 24 0 0 0 34-34z"
+    />
+  </svg>
+)
+
+
+export const ArrowLeft = (props) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    fill="currentColor"
+    stroke="currentColor"
+    strokeWidth={0}
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <path fill="none" stroke="none" d="M0 0h24v24H0V0z" />
+    <path
+      stroke="none"
+      d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+    />
+  </svg>
+)
+
+
+
+
 export const LinkArrow = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    viewBox="0 0 24 24"
-    className={`w-full h-auto ${className}`}
+    width={"100%"}
+    height={"100%"}
+    
     {...rest}
   >
     <path fill="none" d="M0 0h24v24H0z" />
@@ -510,8 +670,8 @@ export const JorgensIcon = ({ className, ...rest }) => (
       enableBackground: "new 0 0 600 600",
     }}
     viewBox="0 0 600 600"
-    height="1em"
-    width="1em"
+    height="50px"
+    width="50px"
     xmlns="http://www.w3.org/2000/svg"
     {...rest}
     className={`w-[150px] h-[150px] filltransparent ${className}`}
@@ -556,15 +716,12 @@ export const DrJorgensIcon = ({ className, ...rest }) => (
     stroke="currentColor"
     fill="currentColor"
     strokeWidth={0}
-    style={{
-      enableBackground: "new 0 0 2049.99 710.02",
-    }}
+  
     viewBox="0 0 2049.99 710.02"
-    height="1em"
-    width="1em"
+    height="100%"
+    width="100%"
     xmlns="http://www.w3.org/2000/svg"
     {...rest}
-    className={`  ${className}`}
   >
 
 

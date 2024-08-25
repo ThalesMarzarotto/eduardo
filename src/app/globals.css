@@ -5,8 +5,35 @@
 /* #133F58 */
 
 
+@font-face {
+    font-family: 'Mont';
+    src: url(../../public/Montserrat-VariableFont_wght.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+.body {
+    font-family: "Mont";
+    background-color: var(--bg-color);
+    color:var(--text-color);
+   
+}
+
+
 
 
 :root{
-    --dark:#133F58
+    --dark:#133F58;
+    --bg-color:white;
+    --text-color:#133F58;
+    --font-family: mont;
 }
+
+[data-theme="dark"] {
+    --bg-color:  #133F58;
+    
+    --text-color:white; 
+}
+
+

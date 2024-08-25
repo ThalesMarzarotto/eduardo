@@ -1,7 +1,7 @@
 .my_custom_class {
     margin-top: 2rem; /* Adjust as needed */
     margin-bottom: 2rem; /* Adjust as needed */
-    width: 60%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -25,7 +25,7 @@
     flex-direction:column;
     align-items: center;
     justify-content:center;
-    background-color: black;
+    background-color: var(--text-color);
     width: 5px;
 
 }
@@ -45,7 +45,8 @@
 
 
 .main {
-  width: 75%;
+  width: 100%;
+
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -58,21 +59,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--text-dark); /* ou a cor desejada para o modo claro */
+  font-size: 45px; /* 8xl em Tailwind é aproximadamente 5rem */
+
+  background-color: var(--bg-color);
+  color:var(--text-color);
 }
 
 .root2{
+  width: 100%;
   font-weight: bold;
-  margin-bottom: 8rem; /* 32 * 0.25rem = 8rem, ou seja, 32px em Tailwind */
-  font-size: 5rem; /* 8xl em Tailwind é aproximadamente 5rem */
+  margin-top: 2rem; /* 32 * 0.25rem = 8rem, ou seja, 32px em Tailwind */
   text-align: center;
-  border-bottom: 2px solid currentColor;
-  width: 90%;
-  z-index: 99999;
-    position: relative;
-
-  display: inline;
+  border-bottom: 2px solid white;
+  font-size: 4rem;
+  line-height:normal;
 }
+
 
 .list{
   margin-top: 20px;
@@ -81,7 +83,7 @@
 .detailInfo{
   text-transform: capitalize;
   font-size: 1.5rem; /* 2xl em Tailwind é aproximadamente 1.5rem */
-  color: rgba(0, 0, 0, 0.75);
+  color: var(--text-color)
 }
 
 .detailInfoPlus{
@@ -93,3 +95,22 @@
   font-size: 1.875rem; 
 
 }
+
+
+
+
+@media(max-width:404px) {
+  
+  .root2{
+   font-size: 3rem;
+  }
+
+
+  .my_custom_class {
+ 
+    width: 98%;
+    
+  }
+
+}
+

@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 
-
+import styles from "./places.module.css"
 
 
 function Places ({address, description, coordinates}) {
@@ -9,15 +9,15 @@ function Places ({address, description, coordinates}) {
 
   return (
 
-  <div className='my-12 dark:text-light grid grid-cols-2 gap-2 flex-start items-start mx-12 '> 
+  <div className={styles.places}> 
 
     
-    <div className='col-span-1 flex flex-col justify-end items-end md:col-span-2 mb:order-1 md:items-center'>
+    <div className={styles.mapWrapper}>
 
         
-        <iframe className='rounded-md w-[75%]'
-                width="300vw"
-                height="350vw"
+        <iframe 
+                width="100%"
+                height="300px"
                 style={{border:0}}
                 loading="lazy"
                 allowfullscreen
@@ -26,18 +26,14 @@ function Places ({address, description, coordinates}) {
                 &q=${coordinates}`}>
         </iframe>
 
-    </div>
-
-
-      <div className='mx-2 flex flex-col md:order-1 md:col-span-2 md:items-center my-2'>
-        <h1 className='text-2xl font-bold'>
+ <h1 className={styles.address}>
         {address}
-        </h1>
-
-        <p className='my-2 inline-block'>
+        </h1>  <p className={styles.description}>
         {description}
         </p>
-      </div>
+    </div>
+
+    
       </div>
   )
 }
@@ -48,14 +44,15 @@ function Places ({address, description, coordinates}) {
 function Page() {
 
   return (
-    <main className='mt-24 mb-64'>     
+    <main className={styles.main}>     
         
-        <div className='mb-8  text-8xl text-center items-center flex flex-col md:text-4xl dark:text-light '>
-            Page de Atendimento
+        <div className={styles}>
+           Locais de Atendimento
         </div>
+        <Places address={'Consultório'} description={"R. São João, 1013 -  Centro, São Leopoldo - RS"} coordinates={'-29.76834057987051, -51.15008944917479'}/>
 
         <Places address={'Centro Clínico Regina'} description={"Av. Doutor Maurício Cardoso 833, sala 505- Hamburgo Velho, Novo Hamburgo -  RS"} coordinates={'-29.6792705,-51.1163451'}/>
-
+    
         
       
     </main>

@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import React from 'react'
-import Layout from './Layout'
 
 
 import cremers from '../public/images/icon-1-rdp.png'
@@ -23,7 +22,6 @@ function Footer() {
               <p className={styles.attributeCredential}>CRM 29002</p>
               <p className={styles.attributeCredential}>RQE Cirurgia Geral 35519</p>
               <p className={styles.attributeCredential}>RQE Cirurgia Digestiva 41641</p>
-              <JorgensIcon/>
             </div>
             <div className={styles.contactInfoContainer} >
             <div className={styles.contactInfo}>
@@ -33,10 +31,9 @@ function Footer() {
              <p>Whats App</p>
               <a
                   href={'https://api.whatsapp.com/send?phone=555191999640&text=%22Ol%C3%A1,%20gostaria%20de%20saber%20mais%22'} 
-                  target={'blank'}
-                  whileHover={{y:-2}} 
-                  whileTap={{scale:0.9}}
-                className ={'w-6 mx-3'}>
+                  className={styles.logo}
+                
+             >
                     <WhatsAppIcon/>
               </a>
             
@@ -81,7 +78,8 @@ function Footer() {
                   <path d="M1083.77,163.87c20.42,0,40.4-.05,60.37,.04,3.81,.02,7.37,4.84,6.8,9.17-2.07,15.66-4.26,31.3-6.44,46.95-4.2,30.14-8.41,60.27-12.65,90.4-3.52,25.03-7.08,50.05-10.61,75.08-.23,1.62-.29,3.26-.48,5.44,2.1,0,3.89,0,5.68,0,35.65,0,71.3,0,106.95,0,7.08,0,10.55,3.79,9.61,10.66-2.04,14.98-4.15,29.96-6.32,45.62h-5.39c-58.97,0-117.94,0-176.91,0-7.12,0-10.26-3.98-9.24-11.15,4.96-34.9,9.81-69.82,14.75-104.72,5.17-36.55,10.42-73.09,15.6-109.64,2.5-17.62,4.9-35.24,7.36-52.86,.21-1.47,.54-2.92,.92-4.99Z"/>
               </svg>  
                 <span>{new Date().getFullYear()} &copy; All Rights Reserved</span>
-            </a>      
+            </a>    
+            <JorgensIcon/>  
     </footer>
   )
 }
