@@ -28,6 +28,8 @@ for (const [key, value] of Object.entries(posts)) {
   return arr.map ((row)=>(
  {
    slug:row[0],
+
+   
    
   }
   
@@ -38,10 +40,14 @@ for (const [key, value] of Object.entries(posts)) {
 
 function Posts({params}) {
 
-const title = articles[params.slug].title
-const date = articles[params.slug].date
-const content = articles[params.slug].content
-const coauthor= articles[params.slug].coauthor
+const {slug} =  params
+
+
+let title = articles[slug].title
+let date = articles[slug].date
+let content = articles[slug].content
+let coauthor = articles[slug].coauthor
+
 
 const markUp = { __html:content }
 

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react' 
 import styles from "./slider.module.css"
 import { ArrowLeft, ArrowRight, ContractIcon, ExpandIcon } from './Icons'
-
+import Image from 'next/image'
 
 
 
@@ -18,6 +18,7 @@ let isDown = true;
 let typeCorrelation = {
 
     "jpg": "photo", 
+    "jpeg": "photo", 
     "webm" :"video"
 }
 
@@ -178,8 +179,17 @@ let isDown
 
 
     setState([...arr])
+    console.log("fucked", arr);
 
+  console.log("cont" + hash);
+  
       const slider = document.getElementById("cont" + hash)
+
+      console.log(slider);
+           let scrollBy =  window.innerWidth>1000? 500: window.innerWidth-12
+     console.log(scrollBy);
+     
+setScrollBy(scrollBy, "hi")
     
       if (slider === null){
         return
@@ -187,9 +197,7 @@ let isDown
       slider.addEventListener('touchstart', (e)=>{
         isDown = true  
         startX = e.changedTouches[0].pageX           
-    
-       
-       
+                  
       });    
     slider.addEventListener('touchend', ()=>{
        isDown= false  
@@ -222,8 +230,7 @@ let isDown
 
 
 
-     let scrollBy =  window.innerWidth>1000? 500: window.innerWidth-12
-setScrollBy(scrollBy)
+
 
     }, []);  
 
@@ -254,11 +261,13 @@ setScrollBy(scrollBy)
 
             {state.map((x, index)=>{
 
-console.log(x)
-let end = x[0].split(".")
+
+let end = x[0].src.split(".")
         
 let tpe = end[end.length-1]
  tpe = typeCorrelation[tpe]
+
+
 
 
 if (tpe === "video") {
@@ -329,7 +338,8 @@ return(
 
 ""}
 
-<img className={styles.image} src={x[0]} draggable={false}
+<Image className={styles.image} src={x[0]} width={400} height={400} alt='example' draggable={false}
+
    style={{
        width:"100%",
        height:"100%",
@@ -338,7 +348,7 @@ return(
    }}
 >
 
-</img> 
+</Image> 
 
   
 </div>               
