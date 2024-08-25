@@ -5,7 +5,7 @@ import Head from 'next/head'
 import React, { useRef } from 'react'
 import styles from "./articles.module.css"
 
-import articles from './[name]/articles.json' assert {type:'json'}
+import articles from './[slug]/articles.json' assert {type:'json'}
 
 
 

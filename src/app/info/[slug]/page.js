@@ -1,8 +1,6 @@
 
-"use client"
 import Image from 'next/image';
-import { useParams, useRouter } from 'next/navigation'
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import JorgensProfile from '../../../../public/images/profile/instaprofile.jpg'
 import ThalesProfile from '../../../../public/images/profile/ThalesInsta.jpg'
@@ -12,38 +10,72 @@ import articles from './articles.json' assert{type: 'json'}
 
 
 import styles from "../articles.module.css"
-
-function Page({props}) {
-
- const [ title, setTitle] = useState("")
- const [ content, setContent] =  useState("")
- const [ coauthor, setCoauthor] = useState("")
- const [ date, setDate] = useState("")
-const params = useParams()
+export async function generateStaticParams() {
+  const posts = articles
   
 
-useEffect(()=>{
+
+    
+let arr = []
+for (const [key, value] of Object.entries(posts)) {
+ 
+ arr.push([key, value])
+  
+}  
+
+
+
+  return arr.map ((row)=>(
+ {
+    title:row.title,
+    date:row.date,
+    content: row.content,
+    coauthor:row.coauthor? row.coauthor : null
+  }
+  
+ ))
+}
+
+
+
+function Posts({params}) {
+
+const title = articles[params.slug].title
+const date = articles[params.slug].date
+const content = articles[params.slug].content
+const coauthor= articles[params.slug].coauthor
+
+const markUp = { __html:content }
+
+
+  console.log(params, "params");
+  
+//  const [ title, setTitle] = useState("")
+//  const [ content, setContent] =  useState("")
+//  const [ coauthor, setCoauthor] = useState("")
+//  const [ date, setDate] = useState("")
+// const params = useParams()
+  
+
+// useEffect(()=>{
    
 
-console.log(params);
 
 
-    if (params.name){
+
+//     if (params.name){
        
-console.log(params.name);
 
-console.log(articles[params.name])
 
-        let article = articles[params.name]
+//         let article = articles[params.name]
        
-console.log(article);
 
-        setTitle( article.title)
-        setContent ( article.content )
-        setCoauthor (article.coauthor)
-        setDate(article.date)
+//         setTitle( article.title)
+//         setContent ( article.content )
+//         setCoauthor (article.coauthor)
+//         setDate(article.date)
 
-    }
+//     }
  
   
 
@@ -51,8 +83,8 @@ console.log(article);
 
 
 
-  },[
-    useRouter().query])
+//   },[
+//     useRouter().query])
 
   return (
 
@@ -110,7 +142,7 @@ console.log(article);
                
             </div>
             
-            <div dangerouslySetInnerHTML={{__html:content}} className='w-[80%] items-center my-8' >
+            <div dangerouslySetInnerHTML={markUp} className={styles.textContent} >
             </div>
 
 
@@ -120,4 +152,4 @@ console.log(article);
   )
 }
 
-export default Page
+export default Posts
